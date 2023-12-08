@@ -1,0 +1,15 @@
+.about-card {
+    padding: 8px;
+    width: 50vw;
+    margin-left: 5vw;
+    background: #000;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+.mejpg {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    height: 50vh;
+    width: 50vh;
+}

@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    background: linear-gradient(90deg, #000 50%, #101010 70%);
+    font-family: Roboto;
+    color: white;
+}
+
+main {
+    margin: 0;
+    height: 100%;
+}
+
+p {
+    font-size: 22px;
+}
+
+footer{
+    padding: 16px;
+    text-align: right;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    flex-direction: row;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: #000;
+    border-bottom-right-radius: 32px;
+}
+
+.navbar a{
+    padding: 16px;
+    margin-left: 128px;
+    text-decoration:none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #aaa;
+
+}
+
+.navbar .language-button {
+    margin-left: auto;
+    margin-right: 32px; /* Adjust the margin as needed */
+    text-align: center; /* Center-align the text within the button */
+}
+
+
+.navbar a:hover {
+    color: white;
+}
+
+.language-button {
+    margin-left: auto;
+    margin-right: 16px; /* Adjust the margin as needed */
+    text-align: center; /* Center-align the text within the button */
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 192px;
+}
+
+.social-dock {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #111;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.social-dock img {
+    height: 64px;
+    width: 64px;
+    padding: 16px;
+}
+
+.email {
+    width: 96px;
+}
+
+
+
+

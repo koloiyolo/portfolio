@@ -1,0 +1,46 @@
+.technologies-card {
+    margin-left: 15vw;
+    width: 50vw;
+    background: #111;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.text-card {
+    background: #000;
+    color:#aaa;
+}
+
+.text-card:hover {
+    background: #101010;
+    color: #fff;
+}
+
+
+.technologies {
+    width: 50vw;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+}
+
+.frontend {
+    width: 25vw;
+    margin-right: 2px;
+    margin-top: 4px;
+    border-bottom-left-radius: 32px;
+}
+
+.backend {
+    width: 25vw;
+    margin-left: 2px;
+    margin-top: 4px;
+    border-bottom-right-radius: 32px;
+}
+
+.technologies-list {
+    border-radius: 32px;
+    height: 60vh;
+    background: #101010;
+}

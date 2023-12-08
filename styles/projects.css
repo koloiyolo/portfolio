@@ -1,0 +1,53 @@
+.projects-text-card {
+    margin-left: 15vw;
+    width: 50vw;
+    background: #000;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    justify-content: center;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.project-tile {
+    margin-left: 15vw;
+    width: 50vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    justify-content: center;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.left {
+    background: #101010;
+}
+
+.right {
+    background: #000;
+}
+
+.right img {
+    margin-left: 0;
+    margin-right: 32px;
+}
+
+.left img {
+    margin-right: 0;
+    margin-left: 32px;
+}
+
+.project-tile p {
+    color: #aaa;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.project-tile a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.project-tile a:hover {
+    text-decoration: none;
+    color: #fff;
+}
