@@ -21,6 +21,14 @@ footer{
     text-align: right;
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
