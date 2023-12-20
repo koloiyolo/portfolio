@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    margin: 0;
+    margin: 0px;
     height: 100%;
 }
 
@@ -71,11 +71,7 @@ h2 {
     color: white;
 }
 
-.language-button {
-    margin-left: auto;
-    margin-right: 16px; /* Adjust the margin as needed */
-    text-align: center; /* Center-align the text within the button */
-}
+
 
 
 .sidebar {
@@ -103,6 +99,57 @@ h2 {
 
 .email {
     width: 96px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+        background: #000;
+        border-bottom-right-radius: 32px;
+    }
+    .navbar .language-button {
+        margin-left: 128px;
+        margin-right: auto; /* Adjust the margin as needed */
+        text-align: center; /* Center-align the text within the button */
+    }
+    .sidebar {
+        height: 25vh;
+        width: 100vw;
+    }
+    .contact {
+        flex-direction: column-reverse;
+    }
+    .social-dock {
+        visibility: hidden;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #111;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
 }
 
 

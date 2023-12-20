@@ -1,5 +1,6 @@
 .projects-text-card {
     margin-left: 15vw;
+    margin-right: 15vw;
     width: 50vw;
     background: #000;
     padding-top: 1vh;
@@ -11,12 +12,26 @@
 
 .project-tile {
     margin-left: 15vw;
+    margin-right: 15vw;
     width: 50vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
     justify-content: center;
     text-align: center;
     border-radius: 32px;
+}
+
+@media (max-width: 768px) {
+    .project-tile {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100vw;
+        /* padding-top: 3vh;
+        padding-bottom: 3vh;
+        justify-content: center;
+        text-align: center;
+        border-radius: 32px; */
+    }
 }
 
 .left {
@@ -50,4 +65,32 @@
 .project-tile a:hover {
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .project-tile {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100vw;
+        /* padding-top: 3vh;
+        padding-bottom: 3vh;
+        justify-content: center;
+        text-align: center;
+        border-radius: 32px; */
+    }
+
+    .projects-text-card {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100vw;
+        /* background: #000;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        justify-content: center;
+        text-align: center;
+        border-radius: 32px; */
+    }
+    .project-tile .row {
+        flex-direction: column;
+    }
 }

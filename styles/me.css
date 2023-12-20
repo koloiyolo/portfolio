@@ -13,3 +13,24 @@
     height: 50vh;
     width: 50vh;
 }
+
+@media (max-width: 768px) {
+    .about-row {
+        flex-direction: column-reverse;
+    }
+
+    .mejpg {
+        border-radius: 32px;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .about-card {
+        padding: 2vw;
+        width: 96vw;
+        margin-left: 0px;
+        background: #000;
+        border-top-left-radius: 32px;
+        border-bottom-left-radius: 32px;
+    }
+}

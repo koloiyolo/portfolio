@@ -44,3 +44,29 @@
     height: 60vh;
     background: #101010;
 }
+
+@media (max-width: 768px) {
+    .technologies-card {
+        margin-left: 0px;
+        width: 100vw;
+    }
+    .technologies {
+        width: 100vw;
+        border-top-right-radius: 32px;
+        border-top-left-radius: 32px;
+    }
+    
+    .frontend {
+        width: 49vw;
+        margin-right: 2px;
+        margin-top: 4px;
+        border-bottom-left-radius: 32px;
+    }
+    
+    .backend {
+        width: 49vw;
+        margin-left: 2px;
+        margin-top: 4px;
+        border-bottom-right-radius: 32px;
+    }
+}
