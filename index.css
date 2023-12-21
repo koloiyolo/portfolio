@@ -113,6 +113,10 @@ h2 {
     padding: 16px;
 }
 
+.mobile-placeholder-box {
+    visibility: hidden;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 24px;
@@ -175,6 +179,12 @@ h2 {
         display: flex;
         flex-direction: column;
     }
+
+    .mobile-placeholder-box {
+        visibility: visible;
+        height: 3vh;
+    }
+
     .placeholder-box {
         display: none;
     }
