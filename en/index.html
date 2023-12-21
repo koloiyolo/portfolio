@@ -65,7 +65,14 @@
                 </div>
             </div>
             <main>
-                <div id="about" style="height:20vh;"><!-- placeholder-box --></div>
+                <div class="mobile-navbar">
+                    <a href="#about">About</a>
+                    <a href="#tech">My Tech Stack</a>
+                    <a href="#projects">My Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="/" class="language-button">Polski</a>
+                </div>
+                <div class="placeholder-box" id="about" style="height:20vh;"><!-- placeholder-box --></div>
                 <div class="row about-row">
                     <div class="about-card">
                         <h1>Hey, my name is Jakub Kołodziej &#x1F44B,</h1>
@@ -83,12 +90,12 @@
                             them in certain scenario will probably be my masters thesis.
                         </p>
                         <p>
-                           
+
                         </p>
                     </div>
                     <img class="mejpg" src="assets/me/me.jpg">
                 </div>
-                <div style="height:40vh;"><!-- placeholder-box --></div>
+                <div class="placeholder-box" style="height:40vh;"><!-- placeholder-box --></div>
                 <div id="tech" style="height:10vh;"><!-- placeholder-box --></div>
                 <div class="technologies-card">
                     <div class="column">
@@ -137,7 +144,7 @@
                         });
                     </script>
                 </div>
-                <div style="height:20vh;"><!-- placeholder-box --></div>
+                <div class="placeholder-box" style="height:20vh;"><!-- placeholder-box --></div>
                 <div id="projects" style="height:10vh;"><!-- placeholder-box --></div>
                 <div class="projects-text-card">
                     <h2>My Projects</h2>
@@ -219,13 +226,15 @@
                 </div>
                 <div class="project-tile left">
                     <div class="row">
-                        <img height="264px" src="assets/projects/weatherday.png">
-                        <img height="264px" src="assets/projects/weatherweek.png">
+                        <div class="project-tile-img-row">
+                            <img height="264px" src="assets/projects/weatherday.png">
+                            <img height="264px" src="assets/projects/weatherweek.png">
+                        </div>
                         <div class="column">
                             <a href="https://github.com/koloiyolo/weather_app">
                                 <h2>Weather App</h2>
                             </a>
-                            <p>
+                            <p class="with-img">
                                 This is mobile weather app.
                                 It was created with framework called Flutter, using API from <a
                                     href="https://openweathermap.org/">OpenWeatherMap</a>.
@@ -240,17 +249,20 @@
                             <a href="https://github.com/koloiyolo/weather_app">
                                 <h2>Warframe Tracker</h2>
                             </a>
-                            <p>
+                            <p class="with-img">
                                 This is mobile app that targets Warframe players.
                                 It is used to check active game events in real time.
-                                It is very useful when player is in mission and wants to check what is going on in the game.
+                                It is very useful when player is in mission and wants to check what is going on in the
+                                game.
                                 It was created in flutter, using API from <a
                                     href="https://docs.warframestat.us/">WarframeStat.us</a>.
                             </p>
                             <img height="64px" src="https://skillicons.dev/icons?i=flutter&perline=5">
                         </div>
-                        <img height="264px" src="assets/projects/wftrackerdark.png">
-                        <img height="264px" src="assets/projects/wftrackerlight.png">
+                        <div class="project-tile-img-row">
+                            <img height="264px" src="assets/projects/wftrackerdark.png">
+                            <img height="264px" src="assets/projects/wftrackerlight.png">
+                        </div>
                     </div>
                 </div>
                 <div class="project-tile left">
@@ -260,7 +272,7 @@
                             <a href="https://github.com/koloiyolo/library_management">
                                 <h2>Library Management</h2>
                             </a>
-                            <p>
+                            <p class="with-img">
                                 It is desktop library app, created as my 2nd year GIU project.
                             </p>
                             <img height="64px" src="https://skillicons.dev/icons?i=flutter&perline=5">
@@ -273,16 +285,18 @@
                             <a href="https://github.com/koloiyolo/fitness_app">
                                 <h2>Fitness App</h2>
                             </a>
-                            <p>
+                            <p class="with-img">
                                 It is multifunctial mobile fitness app.
                                 It can track your trainings, let's you build your training plan,
                                 and can keep yours training pass QR codes offline.
                             </p>
                             <img height="64px" src="https://skillicons.dev/icons?i=flutter&perline=5">
                         </div>
-                        <img height="264px" src="assets/projects/fitness1.png">
-                        <img height="264px" src="assets/projects/fitness2.png">
-                        <img height="264px" src="assets/projects/fitness3.png">
+                        <div class="project-tile-img-row">
+                            <img height="264px" src="assets/projects/fitness1.png">
+                            <img height="264px" src="assets/projects/fitness2.png">
+                            <img height="264px" src="assets/projects/fitness3.png">
+                        </div>
                     </div>
                 </div>
                 <div class="project-tile left">
@@ -293,13 +307,40 @@
                             </a>
                             <p>
                                 It may be hard to belive but this design and site was created purely by me &#x1F609.
-                                To make it I used HTML, CSS and jQuery, icons are from <a href="https://skillicons.dev">skillicons.dev</a>.
+                                To make it I used HTML, CSS and jQuery, icons are from <a
+                                    href="https://skillicons.dev">skillicons.dev</a>.
                             </p>
                             <img height="64px" src="https://skillicons.dev/icons?i=html,css,js,jquery&perline=5">
                         </div>
                     </div>
                 </div>
                 <div style="height:10vh;"><!-- placeholder-box --></div>
+                <div id="contact" style="height:10vh;"><!-- placeholder-box --></div>
+                <div class="social-mobile">
+                        <h1>Contact</h1>
+                        <a href="mailto:jakvb.kolodziej@gmail.com">
+                            <img class="email" src="assets/social/gmail.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jakub-ko%C5%82odziej/">
+                            <img src="assets/social/linkedin.webp">
+                        </a>
+                        <a id="discord">
+                            <img src="assets/social/discord-icon-svgrepo-com.svg">
+                            <script>
+                                $(document).ready(function () {
+                                    $("#discord").click(function () {
+                                        alert("Discord: koloiyolo");
+                                    });
+                                });
+                            </script>
+                        </a>
+                        <a href="https://github.com/koloiyolo">
+                            <img src="assets/social/gh.png">
+                        </a>
+                        <a href="assets/me/JKCV.pdf">
+                            <img src="assets/social/cv.png">
+                        </a>
+                    </div>
             </main>
         </div>
         <footer>

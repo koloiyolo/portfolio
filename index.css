@@ -71,8 +71,9 @@ h2 {
     color: white;
 }
 
-
-
+.mobile-navbar {
+    visibility: hidden;
+}
 
 .sidebar {
     height: 100%;
@@ -101,34 +102,54 @@ h2 {
     width: 96px;
 }
 
+.mobile-contact {
+    visibility: collapse;
+
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 24px;
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     p {
         font-size: 16px;
     }
     .navbar {
-        display: none;
+        visibility: hidden;
+
+    }
+
+    .mobile-navbar {
         flex-direction: column;
         display: flex;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000; 
-        background: #000;
+        color: white;
+        visibility: visible;
+        background-color: black;
+        border-bottom-left-radius: 32px;
         border-bottom-right-radius: 32px;
+        text-align: center;
     }
-    .navbar .language-button {
-        margin-left: 128px;
-        margin-right: auto; /* Adjust the margin as needed */
-        text-align: center; /* Center-align the text within the button */
+
+    .mobile-navbar a {
+        padding: 4px;
+        color: #aaa;
+        text-decoration: none;
+        font-size: 20px;
+
     }
+
+    .mobile-navbar a:hover {
+        background-color: #101010;
+        color: white;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
     .sidebar {
         height: 25vh;
         width: 100vw;
@@ -147,6 +168,22 @@ h2 {
     
         display: flex;
         flex-direction: column;
+    }
+    .placeholder-box {
+        display: none;
+    }
+
+    .social-mobile {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-mobile img {
+        height: 64px;
+        width: 64px;
+        padding: 16px;
     }
     
     

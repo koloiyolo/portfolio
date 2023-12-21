@@ -65,7 +65,14 @@
                 </div>
             </div>
             <main>
-                <div id="about" style="height:20vh;"><!-- placeholder-box --></div>
+                <div class="mobile-navbar">
+                    <a href="#about">O mnie</a>
+                    <a href="#tech">Moje technologie</a>
+                    <a href="#projects">Moje projekty</a>
+                    <a href="#contact">Kontakt</a>
+                    <a href="en/" class="language-button">English</a>
+                </div>
+                <div id="about" style="height:10vh;"><!-- placeholder-box --></div>
                 <div class="row about-row">
                     <div class="about-card">
                         <h1>Cześć, nazywam się Jakub Kołodziej &#x1F44B,</h1>
@@ -95,7 +102,7 @@
                     </div>
                     <img class="mejpg" src="assets/me/me.jpg">
                 </div>
-                <div style="height:40vh;"><!-- placeholder-box --></div>
+                <div class="placeholder-box" style="height:50vh;"><!-- placeholder-box --></div>
                 <div id="tech" style="height:10vh;"><!-- placeholder-box --></div>
                 <div class="technologies-card">
                     <div class="column">
@@ -112,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="height:5vh;"><!-- placeholder-box --></div>
+                <div class="placeholder-box" style="height:5vh;"><!-- placeholder-box --></div>
                 <div class="technologies-card technologies-list" id="technologies">
                     <div class="column">
                         <div style="height:3vh;"><!-- placeholder-box --></div>
@@ -144,7 +151,7 @@
                         });
                     </script>
                 </div>
-                <div style="height:20vh;"><!-- placeholder-box --></div>
+                <div class="placeholder-box" style="height:20vh;"><!-- placeholder-box --></div>
                 <div id="projects" style="height:10vh;"><!-- placeholder-box --></div>
                 <div class="projects-text-card">
                     <h2>Moje Projekty</h2>
@@ -231,8 +238,10 @@
                 </div>
                 <div class="project-tile left">
                     <div class="row">
-                        <img height="264px" src="assets/projects/weatherday.png">
-                        <img height="264px" src="assets/projects/weatherweek.png">
+                        <div class="project-tile-img-row">
+                            <img height="264px" src="assets/projects/weatherday.png">
+                            <img height="264px" src="assets/projects/weatherweek.png">
+                        </div>
                         <div class="column">
                             <a href="https://github.com/koloiyolo/weather_app">
                                 <h2>Weather App</h2>
@@ -252,7 +261,7 @@
                             <a href="https://github.com/koloiyolo/weather_app">
                                 <h2>Warframe Tracker</h2>
                             </a>
-                            <p>
+                            <p class="with-img">
                                 Jest to aplikacja skierowana do graczy Warframe.
                                 Służy ona do sprawdzania aktualnego statusu eventów mających miejsce w grze.
                                 Jest niezwykle przydatna w momencie gdzy gracz jest na długiej misji i chce sprawdzić
@@ -262,8 +271,11 @@
                             </p>
                             <img height="64px" src="https://skillicons.dev/icons?i=flutter&perline=5">
                         </div>
-                        <img height="264px" src="assets/projects/wftrackerdark.png">
-                        <img height="264px" src="assets/projects/wftrackerlight.png">
+                        <div class="mobile-placeholder"><!-- placeholder-box --></div>
+                        <div class="project-tile-img-row">
+                            <img height="264px" src="assets/projects/wftrackerdark.png">
+                            <img height="264px" src="assets/projects/wftrackerlight.png">
+                        </div>
                     </div>
                 </div>
                 <div class="project-tile left">
@@ -288,16 +300,19 @@
                             <a href="https://github.com/koloiyolo/fitness_app">
                                 <h2>Fitness App</h2>
                             </a>
-                            <p>
+                            <p class="with-img">
                                 Jest to mobilna aplikacja fitnesowa napisana we frameworku Flutter.
                                 Służy ona do śledzenia własnych teningów oraz do tworzenia i przechowywania własnych
                                 planów treningowych.
                             </p>
                             <img height="64px" src="https://skillicons.dev/icons?i=flutter&perline=5">
                         </div>
-                        <img height="264px" src="assets/projects/fitness1.png">
-                        <img height="264px" src="assets/projects/fitness2.png">
-                        <img height="264px" src="assets/projects/fitness3.png">
+                        <div class="mobile-placeholder"><!-- placeholder-box --></div>
+                        <div class="project-tile-img-row">
+                            <img height="264px" src="assets/projects/fitness1.png">
+                            <img height="264px" src="assets/projects/fitness2.png">
+                            <img height="264px" src="assets/projects/fitness3.png">
+                        </div>
                     </div>
                 </div>
                 <div class="project-tile left">
@@ -307,14 +322,42 @@
                                 <h2>Ta strona portfolio</h2>
                             </a>
                             <p>
-                                Pewnie ciężko w to uwierzyć, ale strona na której się właśnie znajdujesz jest w pełni mojego autorstwa &#x1F609.
-                                Do stworzenia jej wykorzystałem technologie HTML, CSS oraz jQuery. Oraz ikony ze <a href="https://skillicons.dev">skillicons</a>.
+                                Pewnie ciężko w to uwierzyć, ale strona na której się właśnie znajdujesz jest w pełni
+                                mojego autorstwa &#x1F609.
+                                Do stworzenia jej wykorzystałem technologie HTML, CSS oraz jQuery. Oraz ikony ze <a
+                                    href="https://skillicons.dev">skillicons</a>.
                             </p>
                             <img height="64px" src="https://skillicons.dev/icons?i=html,css,js,jquery&perline=5">
                         </div>
                     </div>
                 </div>
                 <div style="height:10vh;"><!-- placeholder-box --></div>
+                <div id="contact" style="height:10vh;"><!-- placeholder-box --></div>
+                <div class="social-mobile">
+                        <h1>Kontakt</h1>
+                        <a href="mailto:jakvb.kolodziej@gmail.com">
+                            <img class="email" src="assets/social/gmail.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jakub-ko%C5%82odziej/">
+                            <img src="assets/social/linkedin.webp">
+                        </a>
+                        <a id="discord">
+                            <img src="assets/social/discord-icon-svgrepo-com.svg">
+                            <script>
+                                $(document).ready(function () {
+                                    $("#discord").click(function () {
+                                        alert("Discord: koloiyolo");
+                                    });
+                                });
+                            </script>
+                        </a>
+                        <a href="https://github.com/koloiyolo">
+                            <img src="assets/social/gh.png">
+                        </a>
+                        <a href="assets/me/JKCV.pdf">
+                            <img src="assets/social/cv.png">
+                        </a>
+                    </div>
             </main>
         </div>
         <footer>
