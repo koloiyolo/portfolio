@@ -41,13 +41,13 @@
             <div class="sidebar">
                 <div class="social-dock">
                     <a href="mailto:jakvb.kolodziej@gmail.com">
-                        <img class="email" src="assets/social/gmail.png">
+                        <img alt="email icon" class="email" src="assets/social/gmail.png">
                     </a>
                     <a href="https://www.linkedin.com/in/jakub-ko%C5%82odziej/">
-                        <img src="assets/social/linkedin.webp">
+                        <img alt="linkedin icon" src="assets/social/linkedin.webp">
                     </a>
                     <a id="discord">
-                        <img src="assets/social/discord-icon-svgrepo-com.svg">
+                        <img alt="discord icon" src="assets/social/discord-icon-svgrepo-com.svg">
                         <script>
                             $(document).ready(function () {
                                 $("#discord").click(function () {
@@ -57,10 +57,10 @@
                         </script>
                     </a>
                     <a href="https://github.com/koloiyolo">
-                        <img src="assets/social/gh.png">
+                        <img alt="github icon" src="assets/social/gh.png">
                     </a>
                     <a href="assets/me/JKCV.pdf">
-                        <img src="assets/social/cv.png">
+                        <img alt="CV icon" src="assets/social/cv.png">
                     </a>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                             w dziedzinie podboju kosmosu.
                         </p>
                     </div>
-                    <img class="mejpg" src="assets/me/me.jpg">
+                    <img class="mejpg" alt="Zdjęcie przedstawiające autora" src="assets/me/me.jpg">
                 </div>
                 <div class="placeholder-box" style="height:50vh;"><!-- placeholder-box --></div>
                 <div id="tech" style="height:10vh;"><!-- placeholder-box --></div>
@@ -125,30 +125,44 @@
                 <div class="technologies-card technologies-list" id="technologies">
                     <div class="column">
                         <div style="height:3vh;"><!-- placeholder-box --></div>
-                        <img id="tech-row-1" src="https://skillicons.dev/icons?i=python,css,docker,js,rust&perline=6">
+                        <img id="tech-row-1" 
+                            alt="python, css, docker, javascript ,rust" 
+                            src="https://skillicons.dev/icons?i=python,css,docker,js,rust&perline=6">
                         <div style="height:2vh;"><!-- placeholder-box --></div>
                         <img id="tech-row-2"
+                            alt="html, mysql, mongodb, postgres, jquery"
                             src="https://skillicons.dev/icons?i=html,mysql,mongodb,postgres,jquery&perline=5">
                         <div style="height:2vh;"><!-- placeholder-box --></div>
-                        <img id="tech-row-3" src="https://skillicons.dev/icons?i=linux,flutter,php,qt,cpp&perline=5">
+                        <img id="tech-row-3" 
+                            alt="linux, flutter, php, qt, cpp"
+                            src="https://skillicons.dev/icons?i=linux,flutter,php,qt,cpp&perline=5">
                         <div style="height:3vh;"><!-- placeholder-box --></div>
                     </div>
                     <script>
                         $(document).ready(function () {
                             $("#tech-btn").click(function () {
                                 $("#tech-row-1").attr("src", "https://skillicons.dev/icons?i=python,css,docker,js,rust&perline=5");
+                                $("#tech-row-1").attr("alt", "python, css, docker, javascript ,rust");
                                 $("#tech-row-2").attr("src", "https://skillicons.dev/icons?i=html,mysql,mongodb,postgres,jquery&perline=5");
+                                $("#tech-row-2").attr("alt", "html, mysql, mongodb, postgres, jquery");
                                 $("#tech-row-3").attr("src", "https://skillicons.dev/icons?i=linux,flutter,php,qt,cpp&perline=5");
+                                $("#tech-row-3").attr("alt", "linux, flutter, php, qt, cpp");
                             });
                             $("#frontend-tech-btn").click(function () {
                                 $("#tech-row-1").attr("src", "https://skillicons.dev/icons?i=none,css,none,js,none&perline=5");
+                                $("#tech-row-1").attr("alt", " css, javascript");
                                 $("#tech-row-2").attr("src", "https://skillicons.dev/icons?i=html,mysql,mongodb,postgres,jquery&perline=5");
+                                $("#tech-row-2").attr("alt", "html, mysql, mongodb, postgres, jquery");
                                 $("#tech-row-3").attr("src", "https://skillicons.dev/icons?i=none,flutter,none,qt,none&perline=5");
+                                $("#tech-row-3").attr("alt", "flutter, qt");
                             });
                             $("#backend-tech-btn").click(function () {
                                 $("#tech-row-1").attr("src", "https://skillicons.dev/icons?i=python,none,docker,none,rust&perline=5");
+                                $("#tech-row-1").attr("alt", "python, docker, rust");
                                 $("#tech-row-2").attr("src", "https://skillicons.dev/icons?i=none,mysql,mongodb,postgres,none&perline=5");
+                                $("#tech-row-2").attr("alt", "mysql, mongodb, postgres");
                                 $("#tech-row-3").attr("src", "https://skillicons.dev/icons?i=linux,none,php,none,cpp&perline=5");
+                                $("#tech-row-3").attr("alt", "linux, php, cpp");
                             });
                         });
                     </script>
@@ -241,8 +255,8 @@
                 <div class="project-tile left">
                     <div class="row">
                         <div class="project-tile-img-row">
-                            <img height="264px" src="assets/projects/weatherday.png">
-                            <img height="264px" src="assets/projects/weatherweek.png">
+                            <img height="264px" alt="Widok dnia w aplikacji pogodowej" src="assets/projects/weatherday.png">
+                            <img height="264px" alt="Widok tygodnia w aplikacji pogodowej" src="assets/projects/weatherweek.png">
                         </div>
                         <div class="column">
                             <a href="https://github.com/koloiyolo/weather_app">
@@ -275,14 +289,14 @@
                         </div>
                         <div class="mobile-placeholder"><!-- placeholder-box --></div>
                         <div class="project-tile-img-row">
-                            <img height="264px" src="assets/projects/wftrackerdark.png">
-                            <img height="264px" src="assets/projects/wftrackerlight.png">
+                            <img height="264px" alt="Widok zdarzeń na otwartych światach w trybie ciemnym w aplikacji Warframe Tracker" src="assets/projects/wftrackerdark.png">
+                            <img height="264px" alt="Widok szczelin pustki w trybie jasnym w aplikacji Warframe Tracker" src="assets/projects/wftrackerlight.png">
                         </div>
                     </div>
                 </div>
                 <div class="project-tile left">
                     <div class="row">
-                        <img height="264px" src="assets/projects/library.png">
+                        <img height="264px" alt="Widok aplikacji do zarządzania biblioteką" src="assets/projects/library.png">
                         <div class="column">
                             <a href="https://github.com/koloiyolo/library_management">
                                 <h2>Library Management</h2>
@@ -311,9 +325,9 @@
                         </div>
                         <div class="mobile-placeholder"><!-- placeholder-box --></div>
                         <div class="project-tile-img-row">
-                            <img height="264px" src="assets/projects/fitness1.png">
-                            <img height="264px" src="assets/projects/fitness2.png">
-                            <img height="264px" src="assets/projects/fitness3.png">
+                            <img height="264px" alt="Widok miernika czasu w aplikacji fitnesowej" src="assets/projects/fitness1.png">
+                            <img height="264px" alt="Widok menu wysuwanego w aplikacji fitnesowej" src="assets/projects/fitness2.png">
+                            <img height="264px" alt="Widok planu treningowego w aplikacji fitnesowej" src="assets/projects/fitness3.png">
                         </div>
                     </div>
                 </div>
