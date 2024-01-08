@@ -63,12 +63,14 @@
 }
 .project-tile a {
     text-decoration: none;
-    color: #ccc;
+    color: #bbb;
+    transition: 0.5s;
 }
 
 .project-tile a:hover {
     text-decoration: none;
     color: #fff;
+    transition: 0.5s;
 }
 
 .project-tile-img-row {

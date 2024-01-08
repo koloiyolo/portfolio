@@ -11,11 +11,13 @@
 .text-card {
     background: #000;
     color:#aaa;
+    transition: 0.5s;
 }
 
 .text-card:hover {
     background: #101010;
     color: #fff;
+    transition: 0.5s;
 }
 
 
